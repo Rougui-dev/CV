@@ -3,7 +3,7 @@
       
   }
 
-  header {
+  /* header {
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -14,15 +14,15 @@
       padding: 10px;
       width: 100%;
   }
-
-  #toggle {
+ */
+  /* #toggle {
       padding: 3px;
       background-color: white;
       border-radius: 5px;
       display: none;
       cursor: pointer;
   }
-
+ */
 
   aside {
       width: 250px;
@@ -58,7 +58,9 @@
 
   .cv-container {
       width: 70%;
-      margin: 40px auto;
+      margin: 30px auto;
+      /* margin-top: 30px; */
+      /* margin-bottom: 180px; */
       background: #fff;
       padding: 30px;
       box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);

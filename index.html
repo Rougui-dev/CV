@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+    <!-- 
     <header>
 
         <nav class="navbar">
@@ -27,7 +27,7 @@
         <label id="toggle" for="tete"><i class="fas fa-bars" style="font-size: 1.8rem;"></i></label>
     <input type="checkbox" id="tete" hidden>
 
-    </header>
+    </header> -->
     <aside>
         <nav class="navbar">
             <ul>
@@ -41,8 +41,8 @@
             </ul>
         </nav>
     </aside>
-    
-    
+
+
     <div class="cv-container">
         <div class="en-tete">
             <img src="profil.jpg" alt="Ma photo" width="200px" height="200px" class="photo-profil">
@@ -55,7 +55,7 @@
             <div class="col-gauche">
                 <section class="profil" id="profil">
                     <h2>Profil</h2>
-                    <p>Développeuse Web passionnée formée en HTML, CSS, JavaScript, Figma et GitHub.
+                    <p>Développeuse Web passionnée formée en HTML, CSS, JavaScript, Figma, GitHub, Node.js et MongoDB.
                         Forte capacité d'adaptation, motivée par l'apprentissage continu et les défis techniques.
                     </p>
                 </section>
@@ -80,8 +80,10 @@
 
                 <section class="contact" id="contact">
                     <h2>Contact</h2>
-                    <p style="width: 100%; font-weight: bold;">Email: <a  href="diallorouguiatou1712@gmail.com" class="couleur">diallorouguiatou1712@gmail.com</a></p>
-                    <p style="font-weight: bold;">Tel: <a href="tel:" +224 623 98 32 06 class="couleur">+224 623 98 32 06</a></p>
+                    <p style="width: 100%; font-weight: bold;">Email: <a href="diallorouguiatou1712@gmail.com"
+                            class="couleur">diallorouguiatou1712@gmail.com</a></p>
+                    <p style="font-weight: bold;">Tel: <a href="tel:" +224 623 98 32 06 class="couleur">+224 623 98 32
+                            06</a></p>
                 </section>
 
                 <section class="langues" id="langue">
@@ -91,12 +93,27 @@
                         <li>Anglais(<strong>intermédiaire)</strong></li>
                     </ul>
                 </section>
+                <section class="liens" id="lien">
+                    <h2>Liens</h2>
+                    <ul>
+                        <li style="margin-bottom: 5px;"><strong>GitHub:</strong> <a href="https://github.com/Rougui-dev" class="couleur"></a>https://github.com/Rougui-dev</li>
+                        <li><strong>Portfolio:</strong> <a href="https://rougui-dev.github.io/Mon-Portfolio/" class="couleur">https://rougui-dev.github.io/Mon-Portfolio/</a></li>
+                    </ul>
+                </section>
             </div>
 
             <div class="col-droite">
                 <section class="expérience" id="expérience">
                     <h2>Expérience</h2>
-                    <p><strong>Comptable - Magasin de farine</strong>(2023-fevrier 2025)</p>
+                    <p><strong>Refonte du site IRLA(Projet Personnel)</strong></p>
+                    <p><b>Mai 2025</b></p>
+                    <ul>
+                        <li>Conception du userflow et réalisation de la maquette UI/UX avec Figma</li>
+                        <li>Refonte du site avec HTML et CSS uniquement.</li>
+                        <li>Amélioration du code, de l'organisation et du design visuel.</li>
+                    </ul>
+                    <p><strong>Comptable - Magasin de farine</strong></p>
+                    <p><b>2023-fevrier 2025</b></p>
                     <ul>
                         <li>Suivi des stocks, gestion des entrées/sorties.</li>
                         <li>Utilisation d'une Application Web pour optimiser le flux.</li>
@@ -104,13 +121,14 @@
                     </ul>
 
                     <p><strong>Projet Entrepreneurial - Confection de toges</strong></p>
-                    <p>(2022-Présent)</p>
+                    <p><b>2022-Maintenant</b></p>
                     <ul>
                         <li>Confection et réalisation de toges pour divers évènements.</li>
                         <li>Gestion des Commandes, des relations clients et du suivi des ventes.</li>
-                        <li>Organisation de la production et contrôle de la qualité.</li>
+                        <!-- <li>Organisation de la production et contrôle de la qualité.</li> -->
                     </ul>
                     <p><strong>Projet - Impact des réseaux sociaux</strong></p>
+                    <p><b>Juin 2022</b></p>
                     <ul>
                         <li>Collecte et traitement de données satistiques à l'aide de Epi Info.</li>
                         <li>Analyse de l'impact des réseaux sociaux sur une population ciblée.</li>
@@ -120,7 +138,7 @@
 
                 <section class="formation" id="formation">
                     <h2>Formation</h2>
-                    <p><strong>Simplon Guinée</strong> - Formation Développement Web (En cours)</p>
+                    <p><strong>Simplon Guinée</strong> - Formation Développement Web<b>(En cours)</b></p>
                     <p><strong>Université Gamal Abdel Nasser</strong> - Licence en Mathématiques Appliquées</p>
                 </section>
             </div>
@@ -133,8 +151,8 @@
         const toggleCheck = document.getElementById('tete');
         const aside = document.querySelector('aside');
 
-        toggleCheck.addEventListener('change', (e)=> {
-            if(toggleCheck.checked) {
+        toggleCheck.addEventListener('change', (e) => {
+            if (toggleCheck.checked) {
                 aside.style.right = 0;
             } else {
                 aside.style.right = "-250px";
